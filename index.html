@@ -32,25 +32,25 @@
                         <form id="customer-form">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" id="name" class="form-control" placeholder="Enter name" />
+                                <input type="text" onkeypress="return /^[a-zA-Z]+$/.test(event.key);" id="name"
+                                    class="form-control" placeholder="Enter name" />
                             </div>
                             <div class="form-group">
                                 <label for="phoneNumber">Phone Number</label>
-                                <input type="number"
-                                    onkeydown="if(event.keyCode === 69 || event.keyCode === 190 || event.keyCode === 110) return false;"
-                                    id="phoneNumber" class="form-control" placeholder="Enter phone number" />
+                                <input type="text" onkeypress="return /^[0-9]+$/.test(event.key);" id="phoneNumber"
+                                    class="form-control" placeholder="Enter phone number" />
                             </div>
                             <div class="form-group">
                                 <label for="numberofCustomers">Number of Customers</label>
                                 <input type="number"
-                                    onkeydown="if(event.keyCode === 69 || event.keyCode === 190 || event.keyCode === 110) return false;"
+                                    onkeydown="if(event.keyCode === 69 || event.keyCode === 190 || event.keyCode === 110 || event.keyCode === 189 || event.keyCode === 187) return false;"
                                     step="1" min="1" max="5" id="numberofCustomers" class="form-control"
                                     placeholder="Enter number of customers" />
                             </div>
                             <div class="form-group">
                                 <label for="tableID">Table ID</label>
                                 <input type="number"
-                                    onkeydown="if(event.keyCode === 69 || event.keyCode === 190 || event.keyCode === 110) return false;"
+                                    onkeydown="if(event.keyCode === 69 || event.keyCode === 190 || event.keyCode === 110 || event.keyCode === 189 || event.keyCode === 187) return false;"
                                     step="1" min="1" max="16" id="tableID" class="form-control"
                                     placeholder="Enter table ID" />
                             </div>
